@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
+  validates_presence_of :email
   acts_as_authentic
-  
-  attr_accessible :username, :email, :password
 end
