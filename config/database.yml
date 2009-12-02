@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: window_development
+  username: root
+  password: 
+  host: 127.0.0.1
+  
+test:
+  adapter: mysql
+  encoding: utf8
+  database: window_test
+  username: root
+  password: 
+  host: 127.0.0.1
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: window_production
+  username: root
+  password: 
+  host: 127.0.0.1
