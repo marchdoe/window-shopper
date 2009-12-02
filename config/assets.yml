@@ -1,0 +1,19 @@
+embed_images: on
+
+javascripts:
+  workspace:
+    - public/javascripts/jquery.js
+    - public/javascripts/application.js
+
+stylesheets:
+  common:
+    - public/stylesheets/reset.css
+    - public/stylesheets/grid.css
+    - public/stylesheets/typography.css
+    - public/stylesheets/forms.css
+    
+  base:
+    - public/stylesheets/base.css
+
+  print:
+    - public/stylesheets/print.css

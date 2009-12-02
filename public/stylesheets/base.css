@@ -1,0 +1,39 @@
+.header									{ border-bottom: 3px solid #e1e1e1; margin-bottom: 30px; position: relative; }
+.header .container						{ position: relative; }
+.header h1 								{ padding-top: 20px; font-size: 2em;}
+.header .dashboard 						{ padding:3px 12px 5px; position: absolute; }
+.header .dashboard a	 				{ color: #fff; padding:2px 8px 2px; }
+.header .dashboard a:hover				{ color: #FB9D3A; -moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: #fff; }
+
+ul.nav									{ list-style: none; padding: 0; }
+.header ul.nav							{ position: absolute; right: 0; bottom: 5px; margin: 0 0 1em 0; }
+ul.nav li								{ display: inline; margin-left: 1em; }
+
+
+/* BODY
+---------------------------- */
+#flash_messages  						{ margin-bottom: 18px; }
+#flash_messages p 						{ margin-bottom: 0; padding: 8px; }
+#flash_messages p.error 				{ background: #fcc; border: 1px solid #f00; }
+#flash_messages p.notice 				{ background: #fee37a; border: 1px solid #fd9b5b; }
+#flash_messages p.message 				{ background: #cbf285; border: 1px solid #3cab09; }
+
+/* BODY
+---------------------------- */
+.body							{ min-height: 400px; margin-bottom: 50px;}
+
+
+/* PAGINATION
+---------------------------- */
+
+
+
+/* FOOTER
+---------------------------- */
+.footer 						{ border-top: 1px solid #e1e1e1; padding-top: 3em; padding-bottom: 10em; margin-bottom: 1em; }
+.footer p 						{ margin-bottom: 0; padding: 10px 0; }
+.footer ul.nav					{ margin: 0; }
+.footer ul.nav li				{ margin: 0; margin-right: 8px; padding-right: 8px; border-right: 1px solid #e1e1e1; }
+.footer ul.nav li.last			{ border: 0; margin: 0; padding: 0; }
+.footer ul.nav li a				{ font-weight: bold; }
+
