@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :products
+
   map.resources :pages
 
   Jammit::Routes.draw(map)

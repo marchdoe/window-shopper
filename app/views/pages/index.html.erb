@@ -1,20 +1,21 @@
-<h1>Listing pages</h1>
+<h1>Products being watched</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-  </tr>
+<ul>
+	<li><a href="#">Get the title from the title tag?</a><br />
+		price = $120</li>
+	<li><a href="">blah</a><br />
+		price = $120</li>
+	<li><a href="">blah</a><br />
+		price = $120</li>
+</ul>
 
-<% @pages.each do |page| %>
-  <tr>
-    <td><%=h page.title %></td>
-    <td><%= link_to 'Show', page %></td>
-    <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
 
-<br />
 
-<%= link_to 'New page', new_page_path %>
+<%# @pages.each do |page| %>
+	<%#=h page.title %>
+    <%#= link_to 'Show', page %>
+    <%#= link_to 'Edit', edit_page_path(page) %>
+    <%#= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %>
+<%# end %>
+
+<%#= link_to 'New page', new_page_path %>

@@ -926,3 +926,605 @@ NameError (undefined local variable or method `persistence_token' for #<User:0x1
 Rendered rescues/_trace (73.6ms)
 Rendered rescues/_request_and_response (0.6ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-01 21:25:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password_confirmation' for #<User:0x10202f3c0>) on line #17 of app/views/users/_form.html.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :password_confirmation %><br />
+17:     <%= f.password_field :password_confirmation %>
+18:   </p>
+19:   <p><%= f.submit "Submit" %></p>
+20: <% end %>
+
+    app/views/users/_form.html.erb:17
+    app/views/users/_form.html.erb:1
+    app/views/users/new.html.erb:1
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (146.5ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-01 21:25:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password_confirmation' for #<User:0x1042fdeb0>) on line #17 of app/views/users/_form.html.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :password_confirmation %><br />
+17:     <%= f.password_field :password_confirmation %>
+18:   </p>
+19:   <p><%= f.submit "Submit" %></p>
+20: <% end %>
+
+    app/views/users/_form.html.erb:17
+    app/views/users/_form.html.erb:1
+    app/views/users/new.html.erb:1
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-01 21:25:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (8.6ms)
+Rendered layouts/_nav (7.5ms)
+Rendered layouts/_header (14.2ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 60ms (View: 45, DB: 1) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-01 21:25:44) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"FjzGd/+dArJibSFsJXyY4w80Ee7/HB8naaj9hRpgex0=", "controller"=>"users", "user"=>{"username"=>"marchdoe", "password"=>"[FILTERED]", "email"=>"dougmarch@gmail.com"}}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x10426b3f8>):
+  authlogic (2.1.3) lib/authlogic/acts_as_authentic/persistence_token.rb:62:in `reset_persistence_token?'
+  app/controllers/users_controller.rb:8:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (153.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (28.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091202012513)
+Migrating to CreatePages (20091202014953)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-01 21:28:56) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"FjzGd/+dArJibSFsJXyY4w80Ee7/HB8naaj9hRpgex0=", "controller"=>"users", "user"=>{"username"=>"marchdoe", "password"=>"[FILTERED]", "email"=>"dougmarch@gmail.com"}}
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x102025b40>):
+  authlogic (2.1.3) lib/authlogic/acts_as_authentic/persistence_token.rb:62:in `reset_persistence_token?'
+  app/controllers/users_controller.rb:8:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.1ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-01 21:28:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (25.2ms)
+Rendered layouts/_nav (7.5ms)
+Rendered layouts/_header (14.1ms)
+Rendered layouts/_footer (0.9ms)
+Completed in 119ms (View: 104, DB: 1) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-01 21:29:04) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"FjzGd/+dArJibSFsJXyY4w80Ee7/HB8naaj9hRpgex0=", "controller"=>"users", "user"=>{"username"=>"marchdoe", "password"=>"[FILTERED]", "email"=>"dougmarch@gmail.com"}}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x10428e628>):
+  authlogic (2.1.3) lib/authlogic/acts_as_authentic/persistence_token.rb:62:in `reset_persistence_token?'
+  app/controllers/users_controller.rb:8:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-01 21:29:31) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"FjzGd/+dArJibSFsJXyY4w80Ee7/HB8naaj9hRpgex0=", "controller"=>"users", "user"=>{"username"=>"marchdoe", "password"=>"[FILTERED]", "email"=>"dougmarch@gmail.com"}}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NameError (undefined local variable or method `persistence_token' for #<User:0x10428f3e8>):
+  authlogic (2.1.3) lib/authlogic/acts_as_authentic/persistence_token.rb:62:in `reset_persistence_token?'
+  app/controllers/users_controller.rb:8:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-01 21:31:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.1ms)
+Rendered layouts/_header (23.3ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 82ms (View: 71, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-01 21:33:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (18.9ms)
+Rendered layouts/_header (19.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 108ms (View: 98, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-12-01 21:33:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+  [4;36;1mPage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mUser Columns (112.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (130.9ms)
+Rendered layouts/_header (131.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 160ms (View: 37, DB: 113) | 200 OK [http://localhost/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-12-01 21:33:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+  [4;36;1mPage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.2ms)
+Rendered layouts/_header (17.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 38ms (View: 26, DB: 2) | 200 OK [http://localhost/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-01 21:33:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (24.0ms)
+Rendered layouts/_header (24.6ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 45ms (View: 35, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-12-01 21:34:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.1ms)
+Rendered layouts/_header (17.6ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 38ms (View: 26, DB: 2) | 200 OK [http://localhost/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-12-01 21:34:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+  [4;36;1mPage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.4ms)
+Rendered layouts/_header (17.9ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 43ms (View: 32, DB: 2) | 200 OK [http://localhost/pages/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 20:46:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.6ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (21.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (68.4ms)
+Rendered layouts/_header (90.8ms)
+Rendered layouts/_footer (27.5ms)
+Completed in 249ms (View: 201, DB: 22) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (40.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091202012513)
+Migrating to CreatePages (20091202014953)
+Migrating to CreateProducts (20091203015130)
+  [4;36;1mSQL (125.7ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` int(11), `title` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (12.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091203015130')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `products`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `products`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 20:55:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (16.2ms)
+Rendered layouts/_header (85.3ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 146ms (View: 134, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-12-02 20:57:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+  [4;36;1mPage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.5ms)
+Rendered layouts/_header (17.9ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 378ms (View: 367, DB: 2) | 200 OK [http://localhost/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-12-02 20:57:34) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"XbeKe+JkVkfJz0VX5qsGIYTim/KQYRPtGEXCu7MVDS4=", "page"=>{"title"=>"test"}, "controller"=>"pages"}
+  [4;36;1mPage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPage Create (0.2ms)[0m   [0;1mINSERT INTO `pages` (`created_at`, `title`, `updated_at`) VALUES('2009-12-03 01:57:34', 'test', '2009-12-03 01:57:34')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/pages/1
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-12-02 20:57:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mUser Columns (25.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (44.9ms)
+Rendered layouts/_header (45.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 103ms (View: 63, DB: 27) | 200 OK [http://localhost/pages/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:02:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.4ms)
+Rendered layouts/_header (18.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 43ms (View: 32, DB: 3) | 200 OK [http://localhost/pages]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:02:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mPage Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.3ms)
+Rendered layouts/_header (17.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 43ms (View: 31, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2009-12-02 21:03:12) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/edit
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (84.4ms)
+Rendered layouts/_header (84.9ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 144ms (View: 132, DB: 3) | 200 OK [http://localhost/pages/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2009-12-02 21:05:48) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.6ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/edit
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (17.3ms)
+Rendered layouts/_header (17.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 40ms (View: 28, DB: 3) | 200 OK [http://localhost/pages/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:05:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (88.3ms)
+Rendered layouts/_header (88.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 120ms (View: 108, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:06:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (18.2ms)
+Rendered layouts/_header (18.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 39ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:10:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (89.6ms)
+Rendered layouts/_header (90.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 104ms (View: 94, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:10:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (18.7ms)
+Rendered layouts/_header (19.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 33ms (View: 23, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:10:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (100.7ms)
+Rendered layouts/_header (101.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 123ms (View: 112, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-12-02 21:10:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_nav (1.7ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 69ms (View: 48, DB: 1) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-12-02 21:10:28) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"marchdoe", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"XbeKe+JkVkfJz0VX5qsGIYTim/KQYRPtGEXCu7MVDS4=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'marchdoe') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_nav (1.8ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 352ms (View: 20, DB: 2) | 200 OK [http://localhost/user_sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:11:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (21.1ms)
+Rendered layouts/_header (21.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 37ms (View: 25, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-12-02 21:34:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.4ms)[0m   [0;1mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_nav (42.6ms)
+Rendered layouts/_header (48.5ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 200ms (View: 188, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
