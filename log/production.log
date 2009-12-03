@@ -1,0 +1,20 @@
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2009-12-02 22:15:04) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"jCtBWKkXlIApmdJuD8+q0N1Bvt9ygouQGhHZXT3u6UE=", "product"=>{"price"=>"$4", "name"=>"Bat Man", "description"=>"this is the bat man dvd"}}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'window_production.products' doesn't exist: SHOW FIELDS FROM `products`):
+  app/controllers/products_controller.rb:15:in `new'
+  app/controllers/products_controller.rb:15:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
