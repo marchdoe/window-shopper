@@ -1,13 +1,8 @@
 .header									{ border-bottom: 3px solid #e1e1e1; margin-bottom: 30px; position: relative; }
 .header .container						{ position: relative; }
 .header h1 								{ padding-top: 20px; font-size: 2em;}
-.header .dashboard 						{ padding:3px 12px 5px; position: absolute; }
-.header .dashboard a	 				{ color: #fff; padding:2px 8px 2px; }
-.header .dashboard a:hover				{ color: #FB9D3A; -moz-border-radius: 5px; -webkit-border-radius: 5px; background-color: #fff; }
-
-ul.nav									{ list-style: none; padding: 0; }
-.header ul.nav							{ position: absolute; right: 0; bottom: 5px; margin: 0 0 1em 0; }
-ul.nav li								{ display: inline; margin-left: 1em; }
+.header .dashboard						{ padding:3px 12px 5px; list-style: none; padding: 0; position: absolute; right: 0; bottom: 5px; margin: 0 0 1em 0; }
+.header .dashboard li					{ display: inline; margin-left: 1em; }
 
 
 /* BODY
