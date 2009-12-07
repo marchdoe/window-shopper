@@ -2723,3 +2723,4 @@ Rendering products/index
 Rendered layouts/_header (20.6ms)
 Rendered layouts/_footer (0.2ms)
 Completed in 59ms (View: 47, DB: 3) | 200 OK [http://localhost/products]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
