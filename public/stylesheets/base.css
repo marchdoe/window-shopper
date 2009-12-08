@@ -1,8 +1,8 @@
-.header									{ border-bottom: 3px solid #e1e1e1; margin-bottom: 30px; position: relative; }
-.header .container						{ position: relative; }
-.header h1 								{ padding-top: 20px; font-size: 2em;}
-.header .dashboard						{ padding:3px 12px 5px; list-style: none; padding: 0; position: absolute; right: 0; bottom: 5px; margin: 0 0 1em 0; }
-.header .dashboard li					{ display: inline; margin-left: 1em; }
+div.header									{ border-bottom: 3px solid #e1e1e1; margin-bottom: 30px; position: relative; }
+div.header .container						{ position: relative; }
+div.header h1 								{ padding-top: 20px; font-size: 2em;}
+div.header ul.dashboard						{ padding:3px 12px 5px; list-style: none; padding: 0; position: absolute; right: 0; bottom: 5px; margin: 0 0 1em 0; }
+div.header ul.dashboard li					{ display: inline; margin-left: 1em; }
 
 
 /* BODY

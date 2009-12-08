@@ -13,3 +13,34 @@ Rendering products/index
 Rendered layouts/_header (51.2ms)
 Rendered layouts/_footer (24.8ms)
 Completed in 289ms (View: 147, DB: 60) | 200 OK [http://localhost/]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-12-07 22:17:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10[0m
+Rendering template within layouts/application
+Rendering products/index
+  [4;35;1mProduct Columns (42.2ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_header (15.7ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 236ms (View: 178, DB: 44) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2009-12-07 22:17:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"products"}
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mCategory Load (53.9ms)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendered products/_form (111.2ms)
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered layouts/_header (17.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 182ms (View: 117, DB: 57) | 200 OK [http://localhost/products/new]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
