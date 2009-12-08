@@ -17,7 +17,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: window_development
+  database: window_production
   username: root
   password: 
   host: 127.0.0.1
