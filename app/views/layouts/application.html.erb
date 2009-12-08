@@ -3,9 +3,7 @@
 <html>
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= include_stylesheets :common, :base %>
-	<%= include_stylesheets :print, :media => "print" %>
-	<%= include_javascripts :workspace %>
+    <%= stylesheet_link_tag 'reset', 'grid', 'forms', 'typography', 'base' %>
     <%= yield(:head) %>
   </head>
   <body>
