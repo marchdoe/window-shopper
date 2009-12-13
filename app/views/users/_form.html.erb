@@ -1,20 +1,28 @@
-<% form_for @user do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
-  </p>
-  <p>
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </p>
-  <p><%= f.submit "Submit" %></p>
+<% semantic_form_for @user do |f| %>
+	<fieldset>
+	<%= f.error_messages %>
+	<ul>  
+  		<li>
+			<%= f.label :username %>
+  			<%= f.text_field :username, :class => "text" %>
+		</li>
+
+		<li>
+			<%= f.label :email %>
+			<%= f.text_field :email, :class => "text" %>
+		</li>
+
+  		<li>
+			<%= f.label :password %>
+			<%= f.password_field :password, :class => "text" %>
+		</li>
+
+		<li>
+			<%= f.label :password_confirmation %>
+			<%= f.password_field :password_confirmation, :class => "text" %>
+		</li>
+  
+		<li class="submit"><%= f.submit "Submit" %></li>
+	</ul>
+	</fieldset>
 <% end %>
