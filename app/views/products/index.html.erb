@@ -3,14 +3,11 @@
 <ul class="products">
 <% for product in @products %>
   <li class="product">
-	<span class="actions">
-    		<%= link_to "edit", edit_product_path(product) %>
-    		<%= link_to "destroy", product, :confirm => 'Are you sure?', :method => :delete %>
-  	</span>
-    <h3>
-      <%= link_to h(product.name), (product.custom_url.blank? ? product : product.custom_url) %>
-	</h3>
-      <% if product.price_snap_shots.blank? %>
+    <h3><%= link_to h(product.name), (product.custom_url.blank? ? product : product.custom_url) %></h3>
+	
+	<a class="url" href="#"><img class="thumb" src="" alt="image of the product" /></a>
+    
+  	<% if product.price_snap_shots.blank? %>
         No Price Information
       <% else %>
         <% product.price_snap_shots.each do |snapshot| %>
@@ -22,6 +19,10 @@
 		</p>
         <% end %>
       <% end %>
+		<span class="actions">
+	    	<%= link_to "edit", edit_product_path(product) %>
+	    	<%= link_to "destroy", product, :confirm => 'Are you sure?', :method => :delete %>
+	  	</span>
   </li>
 <% end %>
 </ul>

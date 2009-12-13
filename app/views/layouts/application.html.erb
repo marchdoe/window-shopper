@@ -12,11 +12,13 @@
 	
 		<%= render "layouts/header" %>
 	
-		<div class="span-24 body">
+		<div class="span-16 body">
 	  		<%= render_flash_messages %>
 	
 			<%= yield %>
 		</div>
+
+		<%= render "layouts/sidebar" %>
       
       	<%= render "layouts/footer" %>
     </div>

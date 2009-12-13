@@ -5,7 +5,7 @@ div.header ul.dashboard						{ padding:3px 12px 5px; list-style: none; padding: 
 div.header ul.dashboard li					{ display: inline; margin-left: 1em; }
 
 
-/* BODY
+/* FLASH MESSAGES
 ---------------------------- */
 #flash_messages  						{ margin-bottom: 18px; }
 #flash_messages p 						{ margin-bottom: 0; padding: 8px; }
@@ -18,7 +18,9 @@ div.header ul.dashboard li					{ display: inline; margin-left: 1em; }
 .body							{ min-height: 400px; margin-bottom: 50px;}
 
 .products 						{ list-style: none; margin: 0 0 60px 0; padding: 0; }
-.product						{ padding-bottom: 7px; margin-bottom: 8px; border-bottom: 1px solid #e1e1e1;  position: relative; }
+.product						{ padding: 0 0 7px 120px; margin-bottom: 8px; border-bottom: 1px solid #e1e1e1;  position: relative; min-height: 75px; }
+.product a.url					{ padding: 2px; border: 1px solid #e1e1e1; position: absolute; left: 0; top: 0; }
+.product img.thumb				{ width: 104px; height:68px; display: block; background-color: pink; }
 .product h3						{ margin-bottom: 0; }
 .product span.actions			{ position: absolute; right: 15px; bottom: 7px; font-size: 12px; }
 .product p 						{ margin-bottom: 0; }

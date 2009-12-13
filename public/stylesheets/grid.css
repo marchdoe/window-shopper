@@ -19,7 +19,7 @@
 }
 
 /* Use this class on any div.span / container to see the grid. */
-.showgrid {
+.grid {
   background: url("/images/grid.png");
 }
 
