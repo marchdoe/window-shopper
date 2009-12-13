@@ -5,10 +5,16 @@
   <li class="product">
     <h3>
       <%= link_to h(product.name), (product.custom_url.blank? ? product : product.custom_url) %>
-      <% if product.price %>
-        <%= number_to_currency(product.price) %>
+      <% if product.price_snap_shots.blank? %>
+        No Price Information
       <% else %>
-        No Price
+        <% product.price_snap_shots.each do |snapshot| %>
+          <div>
+            <%= number_to_currency(snapshot.price) %>
+            - <%= snapshot.created_at.to_s(:monthdy) %>  
+            <%= snapshot.created_at.to_s(:time) %>  
+          </div>
+        <% end %>
       <% end %>
     </h3>
     <div class="actions">
