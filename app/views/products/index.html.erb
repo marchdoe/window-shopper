@@ -1,28 +1,29 @@
-<% title "Products" %>
+<h2>The Products You Are Watching</h2>
 
 <ul class="products">
 <% for product in @products %>
   <li class="product">
+	<span class="actions">
+    		<%= link_to "edit", edit_product_path(product) %>
+    		<%= link_to "destroy", product, :confirm => 'Are you sure?', :method => :delete %>
+  	</span>
     <h3>
       <%= link_to h(product.name), (product.custom_url.blank? ? product : product.custom_url) %>
+	</h3>
       <% if product.price_snap_shots.blank? %>
         No Price Information
       <% else %>
         <% product.price_snap_shots.each do |snapshot| %>
-          <div>
-            <%= number_to_currency(snapshot.price) %>
+
+          <p>
+			<%= number_to_currency(snapshot.price) %>
             - <%= snapshot.created_at.to_s(:monthdy) %>  
             <%= snapshot.created_at.to_s(:time) %>  
-          </div>
+		</p>
         <% end %>
       <% end %>
-    </h3>
-    <div class="actions">
-      <%= link_to "Edit", edit_product_path(product) %> |
-      <%= link_to "Destroy", product, :confirm => 'Are you sure?', :method => :delete %>
-    </div>
   </li>
 <% end %>
 </ul>
 
-<p><%= link_to "New Product", new_product_path %></p>
+<!-- <p><%#= link_to "New Product", new_product_path %></p> -->

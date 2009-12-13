@@ -17,10 +17,14 @@ div.header ul.dashboard li					{ display: inline; margin-left: 1em; }
 ---------------------------- */
 .body							{ min-height: 400px; margin-bottom: 50px;}
 
+.products 						{ list-style: none; margin: 0 0 60px 0; padding: 0; }
+.product						{ padding-bottom: 7px; margin-bottom: 8px; border-bottom: 1px solid #e1e1e1;  position: relative; }
+.product h3						{ margin-bottom: 0; }
+.product span.actions			{ position: absolute; right: 15px; bottom: 7px; font-size: 12px; }
+.product p 						{ margin-bottom: 0; }
 
 /* PAGINATION
 ---------------------------- */
-
 
 
 /* FOOTER
