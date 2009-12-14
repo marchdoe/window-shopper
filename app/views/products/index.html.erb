@@ -7,6 +7,7 @@
 	
 	<div class="thumb">
 		<a class="url" href="http://www.jcrew.com/AST/Browse/MensBrowse/Men_Shop_By_Category/outerwear/leather/PRDOVR~10879/10879.jsp" rel="nofollow"><img class="thumb" src="images/example.png" alt="image of the product" /></a>
+		<span>Sale!</span>
 	</div>
     
   	<% if product.price_snap_shots.blank? %>
@@ -15,7 +16,7 @@
         <% product.price_snap_shots.each do |snapshot| %>
 
           <p>
-			<%= number_to_currency(snapshot.price) %>
+			<span class="price"><%= number_to_currency(snapshot.price) %></span>
             - <%= snapshot.created_at.to_s(:monthdy) %>  
             <%= snapshot.created_at.to_s(:time) %>  
 		</p>
