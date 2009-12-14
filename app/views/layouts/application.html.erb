@@ -2,19 +2,19 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'reset', 'grid', 'forms', 'typography', 'base' %>
- 
-    <%= yield(:head) %>
+    <title></title>
+	<%= include_stylesheets :common, :base %>
+	<%= include_stylesheets :print, :media => "print" %>
+	<%= include_javascripts :workspace %>
   </head>
   <body>
     <div class="container">
 	
 		<%= render "layouts/header" %>
+		
+		<%= render_flash_messages %>
 	
 		<div class="span-16 body">
-	  		<%= render_flash_messages %>
-	
 			<%= yield %>
 		</div>
 

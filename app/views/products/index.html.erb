@@ -5,7 +5,9 @@
   <li class="product">
     <h3><%= link_to h(product.name), (product.custom_url.blank? ? product : product.custom_url) %></h3>
 	
-	<a class="url" href="#"><img class="thumb" src="" alt="image of the product" /></a>
+	<div class="thumb">
+		<a class="url" href="http://www.jcrew.com/AST/Browse/MensBrowse/Men_Shop_By_Category/outerwear/leather/PRDOVR~10879/10879.jsp" rel="nofollow"><img class="thumb" src="images/example.png" alt="image of the product" /></a>
+	</div>
     
   	<% if product.price_snap_shots.blank? %>
         No Price Information
@@ -17,6 +19,8 @@
             - <%= snapshot.created_at.to_s(:monthdy) %>  
             <%= snapshot.created_at.to_s(:time) %>  
 		</p>
+		
+		<p class="description">get a description of the product, nothing more than 100 characters from the site. This might be more tough that it should, if it is, perhaps we can figure out...</p>
         <% end %>
       <% end %>
 		<span class="actions">
