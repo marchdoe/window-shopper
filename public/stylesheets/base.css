@@ -11,12 +11,12 @@ div.header ul.dashboard li					{ display: inline; margin-left: 1em; }
 #flash_messages p 						{ margin-bottom: 0; padding: 8px; }
 #flash_messages p.error, 				
 #flash_messages p.notice, 
-#flash_messages p.success				{ padding: .8em; margin-bottom: 1em; border: 2px solid #ddd; background: #FBE3E4; color: #8a1f11; border-color: #FBC2C4;}
+#flash_messages p.message				{ padding: .8em; margin-bottom: 1em; border: 2px solid #ddd; background: #FBE3E4; color: #8a1f11; border-color: #FBC2C4;}
 #flash_messages p.notice     			{ background: #FFF6BF; color: #514721; border-color: #FFD324; }
-#flash_messages p.success    			{ background: #E6EFC2; color: #264409; border-color: #C6D880; }
+#flash_messages p.message    			{ background: #E6EFC2; color: #264409; border-color: #C6D880; }
 #flash_messages p.error a    			{ color: #8a1f11; }
 #flash_messages p.notice a   			{ color: #514721; }
-#flash_messages p.success a  			{ color: #264409; }
+#flash_messages p.message a  			{ color: #264409; }
 
 /* BODY
 ---------------------------- */

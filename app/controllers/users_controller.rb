@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      flash[:notice] = "Registration Successful."
+      add_message( "Registration Successful." )
       redirect_to root_url
     else
       render :action => 'new'
@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   def update
     @user = current_user
     if @user.update_attributes(params[:user])
-      flash[:notice] = "Successfully updated profile."
+      add_message( "Successfully updated profile." )
       redirect_to root_url
     else
       render :action => 'edit'
