@@ -7,6 +7,17 @@
   <%= number_to_currency @product.price %>
 </p>
 
+<p>
+  <strong>Price Snapshots:</strong>
+  <% @product.price_snap_shots.each do |snapshot| %>
+    <p>
+      <%= number_to_currency(snapshot.price) %>
+      -
+      <%= snapshot.created_at.to_s(:mdy) %>
+    </p>
+  <% end %>
+</p>
+
 <% unless @product.category.nil? %>
 <p>
   <strong>Category:</strong>
