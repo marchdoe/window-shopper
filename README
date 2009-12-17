@@ -8,3 +8,23 @@ This runs the command every day at midnight. The above line breaks down to:
 1. cd to the directory where the app exists
 2. source the file which sets up the environment for cron (important vars like GEM_PATH)
 3. run the rake command
+
+
+On Sun, 13 Dec 2009 07:20:26 UTC +00:00 I created our first product with url:
+
+http://www.jcrew.com/AST/Browse/MensBrowse/Men_Feature_Assortment/catalogjcrewcomexclusives/sportcoatsouterwear/PRDOVR~10879/99101630642/ENE~1+2+3+22+4294967294+20~~~16~15~all~mode+matchallany~~~~~suede/10879.jsp
+
+Four days later that url is no longer valid. The difference? Look at the url below:
+
+http://www.jcrew.com/AST/Browse/MensBrowse/Men_Feature_Assortment/catalogjcrewcomexclusives/sportcoatsouterwear/PRDOVR~10879/99101630643/ENE~1+2+3+22+4294967294+20~~~16~15~all~mode+matchallany~~~~~suede/10879.jsp
+
+the only difference is in the number after PRD0VR and before the ENE set of numbers: 
+
+99101630642
+
+becomes
+
+99101630643
+
+Hard to know exactly what this means and why. Perhaps every couple days they increment that number to prevent automated searches/scraping? Let's watch this and document here.
+
