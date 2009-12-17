@@ -6,6 +6,7 @@ module JCrew
     agent = WWW::Mechanize.new
     agent.get(product.url)
     price_text = agent.page.search('font').first
-    price = /([0-9\.]+)/.match(price_text)[1].to_f
+    matched_text = /([0-9\.]+)/.match(price_text)
+    matched_text[1].to_f if matched_text
   end
 end
