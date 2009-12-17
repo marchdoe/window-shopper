@@ -1,4 +1,10 @@
-Railscasts Example Store App
---
+crontab setup:
 
-To setup the app, just run `rake setup`.
+projects/window-shopper master > crontab -l
+0 0 * * * cd /Users/jack/projects/window-shopper && . /Users/jack/.profile && /Users/jack/.rvm/ruby-1.8.6-p383/bin/rake jcrew:fetch_price
+
+This runs the command every day at midnight. The above line breaks down to: 
+
+1. cd to the directory where the app exists
+2. source the file which sets up the environment for cron (important vars like GEM_PATH)
+3. run the rake command
