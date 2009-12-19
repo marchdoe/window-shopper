@@ -4,10 +4,7 @@ namespace :jcrew do
   task :fetch_price => :environment do
     product = Product.first
     puts "Fetching price for item at: #{product.url}"
-    price = JCrew.fetch_price(product)
-    if price
-      PriceSnapShot.create!(:price => price, :product_id => product.id)
-      print "Price is: #{price}"
-    end
+    snapshot = JCrew.fetch_product_info(product)
+    print "Price is: #{snapshot.price}. Item is #{snapshot.sold_out? ? '' : 'not '}sold out"
   end
 end
